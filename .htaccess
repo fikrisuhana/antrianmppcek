@@ -1,0 +1,5 @@
+RewriteEngine On
+# Go to https 
+RewriteCond %{HTTPS} off
+RewriteCond %{QUERY_STRING} ^r=user/profile$ [NC]
+RewriteRule ^(index\.php)$ https://antrianmpp.purbalinggakab.go.id/$1 [R,L]
